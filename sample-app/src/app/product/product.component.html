@@ -1,0 +1,36 @@
+<p>product works!</p>
+
+    <div class="row">
+        <div class="col" *ngFor = 'let product of product'>
+<div class="card" style="width: 18rem;">
+    <img src="{{ product.image}}" class="card-img-top" alt="...">
+    <div class="card-body" >
+      <h3 class="card-title">{{product.product_name}}</h3>
+      <h5 class="card-text">{{product.price}}</h5>
+      <!-- <button href="#" class="btn btn-primary" [disabled] = "product.stock == 0">Buy Now</button>  -->
+      <!-- <a routerLink="/product/{{ product.id }}">Details</a> -->
+      <a [routerLink]="['/product', product.id ]">Details</a>
+      
+      </div>
+  </div>
+</div>
+</div>
+ 
+
+<!-- <p [class]="set_class?'para':'para1'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt ab, hic quos iure enim eligendi quae rerum sapiente minima officiis autem cumque voluptas molestias voluptatem adipisci modi quisquam quia!</p>
+<h1 [class]="'para1 para'">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo temporibus aperiam iure harum, expedita corrupti corporis ducimus eius ut. Totam facilis repudiandae quis similique explicabo magni, libero odit accusantium nihil?</h1>
+
+<p [style.color]="set_color?'yellow':'red'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus.</p>
+<p [ngStyle]="{'color':set_color?'brown':'purple','font-size':'40px'}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores error obcaecati quaerat earum neque sapiente ipsam assumenda est asperiores laborum rerum ea distinctio repellat, ipsa maxime labore iure temporibus. Magnam?</p>
+
+<p [ngClass]="['para para1']">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, tempore?</p>
+<p [ngClass]="{'para':true,'para1':false}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, tempore?</p>
+<br><br><br>  -->
+ 
+ <!-- <div  style="margin: auto; width: 400px;">
+  <input #text type="text" [(ngModel)]="user_name" value="{{ user_name }}" class="rounded"><br><br>
+
+  <button class="btn btn-danger btn-rounded" (click)="get_data(text.value)">click</button>
+  {{ user_name }}
+
+</div> -->

@@ -1,0 +1,11 @@
+<p>home-work works!</p>
+<p [class]="set_class?'para' : 'para1'">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur similique aperiam, dolorem fugiat, eveniet earum vero temporibus molestiae, odit error mollitia numquam est dolor iusto nulla quis voluptatem deleniti?</p>
+<p [class.para]="set_class">hello</p>
+<h1 [style.background-color]="set_class?'brown':'yellow'">welcome</h1>
+<h2 [ngStyle]="{'color':set_class?'red':'blue','background-color':'yellow'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, fugit.</h2>
+<h1 [ngClass]="['para para2']">Lorem, ipsum.</h1>
+<h1 [ngClass]="{'para':true ,'para1':false}">Lorem, ipsum.</h1>
+
+<input #text type="text" [(ngModel)]="user_name" value="{{ user_name }}">
+<button class="btn btn-danger" (click)="btn_click($event)">click</button>
+{{user_name}}

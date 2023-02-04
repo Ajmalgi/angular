@@ -1,0 +1,80 @@
+<!-- <div class="container">
+<table class="table hover" *ngIf ="table_show">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>phone</th>
+    </tr>
+    <tr *ngFor = "let student of student">
+        <td>{{student.id}}</td>
+        <td>{{student.name |uppercase }}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.phone}}</td>
+    </tr>
+
+</table>
+
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, inventore.</p>
+    <p *ngSwichCase="'red'">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, inventore.</p>
+    <p *ngSwichCase="'blue'">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, inventore.</p>
+    <p *ngSwichCase="'green'">4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, inventore.</p>
+    
+</div>
+<div *ngIf = "course.length>0; then show_course else no_course">
+
+</div>
+<ng-template #show_course >
+    <p *ngFor="let c of course">{{c}}</p>
+</ng-template>
+<ng-template #no_course>
+    <p>no course</p>
+</ng-template>
+
+<button class="btn btn-danger" [disabled]="button_disable">click here</button>
+</div> -->
+<br><br><br>
+<!-- <select name=""[(ngModel)] ="div_color">
+    <option value="red">Red</option>
+    <option value="yellow">yellow</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+</select><br><br>
+
+<div [style.background-color]="div_color" style="width:200px; height: 200px; border: 2px solid;">
+
+</div> -->
+
+<select name=""[(ngModel)] ="div_color">
+    <option value="red">Red</option>
+    <option value="yellow">yellow</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+</select><br><br>
+<select name=""[(ngModel)] ="div_fontsize">
+    <option value="20px">20px</option>
+    <option value="40px">40px</option>
+    <option value="60px">60px</option>
+    <option value="80px">80px</option>
+</select><br><br>
+
+<select name=""[(ngModel)] ="div_fontweight">
+    <option value="100">100</option>
+    <option value="bolder">500</option>
+    <option value="800">800</option>
+    <option value="400">900</option>
+</select><br><br>
+
+<select name=""[(ngModel)] ="div_fontfamily">
+    <option value="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">1</option>
+    <option value="'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">2</option>
+    <option value="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">300</option>
+    <option value="Arial, Helvetica, sans-serif">3</option>
+</select><br><br>
+
+<div [style.background-color]="div_color" style="width:200px; height: 200px; border: 2px solid;">
+<h1 [ngStyle]="{'font-size':div_fontsize,'font-weight':div_fontweight,'font-family':div_fontfamily}" >hee</h1>
+</div>
+
+<h1>hai</h1>
